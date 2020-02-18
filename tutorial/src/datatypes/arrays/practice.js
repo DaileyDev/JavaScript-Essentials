@@ -38,10 +38,13 @@ middleEarth.splice('Sauraman');
   map over this array, and return a new array of the numbers in it, multiplied by 10
 */
 
+
 const numbers = [2, 3, 4, 5, 6];
+  const multiply = numbers.map(function(number){
+    return number * 10 ;
+  })
 
-
-
+  console.log(multiply);
 /* 
   Problem 4: Filter Friends
   Here you're going to create two new arrays. 
@@ -58,6 +61,9 @@ const friends = [
   { name: 'Rachel', gender: 'M' }
 ];
 
-const femaleFriends = friends; // finish this
-const male = friends; // finish this
+const femaleFriends = friends.filter(female => female.gender === 'F') ;
+const male = friends.filter(male => male.gender === 'M') ;
+
+console.log(femaleFriends);
+console.log(male);
 
